@@ -32,7 +32,7 @@ jobs:
 
       - name: Install latest build tools
         run: |
-          echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "build-tools;34.0.0" --sdk_root=${ANDROID_SDK_ROOT}
+          echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "build-tools;33.0.2" --sdk_root=${ANDROID_SDK_ROOT}
 
       - name: Install NDK
         run: |
