@@ -44,7 +44,21 @@ jobs:
           arguments: assembleDebug
           gradle-home-cache-cleanup: true
 
+      - name: Create 7z Release
+        uses: DuckSoft/create-7z-action@v1.0
+        with:
+          pathSource: ./app/build/outputs/apk/
+          pathTarget: ./release.7z
+
       - name: Uploading Artifact
         uses: actions/upload-artifact@v3
         with:
-          path: ./app/build/outputs/apk/debug/app-debug.apk
+          path: release.7z
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: release.7z
+          tag: ${{ github.ref }}
+          overwrite: true
