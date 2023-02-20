@@ -32,8 +32,8 @@ internal class ImageClickableResizeSpan(d: Drawable, source: String, private val
         } else {
             url = source
         }
-        if (url?.startsWith("https:") == true) {
-            this.url = url.replaceFirst("https:", "http:")
+        if (url?.startsWith("http:") == true) {
+            this.url = url.replaceFirst("http:", "https:")
         } else {
             this.url = url
         }
