@@ -41,8 +41,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildFeatures {
         dataBinding true
@@ -69,11 +69,11 @@ android {
     buildTypes {
         debug {
             multiDexEnabled true
-            applicationIdSuffix '.debug'
-            versionNameSuffix '-debug'
-            if(signingConfigs.hasProperty('release')){
-                signingConfig signingConfigs.release
-            }
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         alpha {
