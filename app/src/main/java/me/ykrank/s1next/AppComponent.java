@@ -99,7 +99,7 @@ public interface AppComponent {
 
     AppHostUrl getBaseHostUrl();
 
-    BaseDns getHttpDns();
+    Dns getHttpDns();
 
     @Image
     OkHttpClient getImageOkHttpClient();
