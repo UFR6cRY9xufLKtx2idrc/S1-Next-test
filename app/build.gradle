@@ -144,8 +144,8 @@ dependencies {
 
     implementation 'com.tencent.bugly:nativecrashreport:3.9.2'
 
-    implementation 'com.google.dagger:dagger:2.39.1'
-    kapt 'com.google.dagger:dagger-compiler:2.39.1'
+    implementation 'com.google.dagger:dagger:2.45'
+    kapt 'com.google.dagger:dagger-compiler:2.45'
 
     implementation 'androidx.transition:transition:1.4.1'
 
