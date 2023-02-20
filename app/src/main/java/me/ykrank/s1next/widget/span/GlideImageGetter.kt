@@ -175,8 +175,8 @@ class GlideImageGetter protected constructor(private val mTextView: TextView) : 
         if (emoticonName == null && !URLUtil.isNetworkUrl(url)) {
             url = Api.BASE_URL + url
         }
-        if(url?.startsWith("https://") == true){
-            url = url.replaceFirst("https://", "http://")
+        if(url?.startsWith("http://") == true){
+            url = url.replaceFirst("http://", "https://")
         }
         if (emoticonName != null) {
             //Scale
