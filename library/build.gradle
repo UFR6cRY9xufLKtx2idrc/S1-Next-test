@@ -100,7 +100,7 @@ dependencies {
     api 'io.github.lucksiege:compress:v3.10.7'
 
     //PictureUpload
-    api 'org.jsoup:jsoup:1.14.3'
+    api 'org.jsoup:jsoup:1.15.4'
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
     api 'com.squareup.retrofit2:converter-jackson:2.9.0'
