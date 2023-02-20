@@ -42,7 +42,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    buildToolsVersion = '30.0.4'
+    buildToolsVersion = '30.0.3'
     compileSdkVersion = 33
     targetSdkVersion = 33
 }
