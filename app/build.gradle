@@ -183,7 +183,7 @@ dependencies {
     implementation 'com.liulishuo.okdownload:okhttp:1.0.7'
     implementation 'com.liulishuo.okdownload:sqlite:1.0.7'
 
-    implementation('com.aliyun.ams:alicloud-android-httpdns:2.0.4@aar') {
+    implementation('com.aliyun.ams:alicloud-android-httpdns:2.3.0-intl@aar') {
         transitive true
     }
 
