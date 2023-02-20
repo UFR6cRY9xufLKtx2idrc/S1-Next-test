@@ -2,7 +2,7 @@
 apply plugin: "com.github.ben-manes.versions"
 
 buildscript {
-    ext.kotlin_version = '1.7.22'
+    ext.kotlin_version = '1.6.21'
     repositories {
         gradlePluginPortal()
         google()
