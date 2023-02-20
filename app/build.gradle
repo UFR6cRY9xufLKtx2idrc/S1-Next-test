@@ -19,8 +19,8 @@ if(httpDnsSecret == null){
 }
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion '33.0.2'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId 'me.ykrank.s1next'
