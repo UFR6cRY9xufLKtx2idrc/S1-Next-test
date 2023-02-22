@@ -16,14 +16,14 @@ public final class Api {
     public static final String BASE_AVATAR_URL = "https://avatar.saraba1st.com/";
     public static final String BASE_API_URL = "https://" + BASE_HOST + "/2b/api/mobile/";
     private static final String BASE_STATIC_URL = "https://static.saraba1st.com/";
-    private static final String BASE_STATIC_URL_HTTP = "http://static.saraba1st.com/";
+    private static final String BASE_STATIC_URL_HTTP = "https://static.saraba1st.com/";
     public static final String[] HOST_LIST = new String[]{
             "bbs.saraba1st.com", "www.saraba1st.com", "stage1st.com", "www.stage1st.com"
     };
 
     public static boolean SUPPORT_HTTPS = true;
 
-    static final String RANDOM_IMAGE_URL = "http://ac.stage3rd.com/S1_ACG_randpic.asp";
+    static final String RANDOM_IMAGE_URL = "https://ac.stage3rd.com/S1_ACG_randpic.asp";
     static final String BASE_API_PREFIX = "index.php?module=";
 
     public static final String API_VERSION_DEFAULT = "1";
