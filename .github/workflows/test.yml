@@ -47,6 +47,13 @@ jobs:
       - name: Uploading Artifact
         uses: actions/upload-artifact@v3
         with:
-          path: |
-            ./app/build/outputs/apk/normal/debug/app-normal-debug.apk
-            ./app/build/outputs/apk/play/debug/app-play-debug.apk
+          name: app-normal-debug.apk
+          path: ./app/build/outputs/apk/normal/debug/app-normal-debug.apk
+          if-no-files-found: error
+
+      - name: Uploading Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-play-debug.apk
+          path: ./app/build/outputs/apk/play/debug/app-play-debug.apk
+          if-no-files-found: error
