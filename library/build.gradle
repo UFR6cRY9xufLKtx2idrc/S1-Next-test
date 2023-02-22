@@ -25,6 +25,15 @@ android {
     buildFeatures {
         dataBinding true
     }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 
     defaultPublishConfig "normalRelease"
 
