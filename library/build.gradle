@@ -60,7 +60,7 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
 
-    api "com.google.android.material:material:1.5.0-alpha02"
+    api "com.google.android.material:material:1.5.0"
     api "androidx.cardview:cardview:1.0.0"
     api "androidx.percentlayout:percentlayout:1.0.0"
     api "androidx.legacy:legacy-preference-v14:1.0.0"
