@@ -70,7 +70,6 @@ android {
         debug {
             multiDexEnabled true
             debuggable true
-            minifyEnabled true
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
