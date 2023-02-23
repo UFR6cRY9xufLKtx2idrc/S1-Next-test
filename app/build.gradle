@@ -90,12 +90,11 @@ android {
 
         release {
             multiDexEnabled true
-            if (signingConfigs.hasProperty('release')) {
-                signingConfig signingConfigs.release
-            }
+            debuggable true
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     buildTypes.each {
