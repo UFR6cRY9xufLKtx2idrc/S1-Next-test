@@ -41,19 +41,19 @@ jobs:
       - name: Gradle Build
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: assembleDebug
+          arguments: assembleRelease
           gradle-home-cache-cleanup: true
 
       - name: Uploading Artifact
         uses: actions/upload-artifact@v3
         with:
           name: app-normal-debug.apk
-          path: ./app/build/outputs/apk/normal/debug/app-normal-debug.apk
+          path: ./app/build/outputs/apk/normal/debug/app-normal-release-unsigned.apk
           if-no-files-found: error
 
       - name: Uploading Artifact
         uses: actions/upload-artifact@v3
         with:
           name: app-play-debug.apk
-          path: ./app/build/outputs/apk/play/debug/app-play-debug.apk
+          path: ./app/build/outputs/apk/play/debug/app-play-release-unsigned.apk
           if-no-files-found: error
