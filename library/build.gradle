@@ -71,7 +71,7 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     //For jackson
     api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
 
     api "com.google.android.material:material:1.6.1"
     api "androidx.cardview:cardview:1.0.0"
