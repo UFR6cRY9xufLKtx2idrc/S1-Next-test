@@ -68,14 +68,11 @@ android {
     }
     buildTypes {
         debug {
-            multiDexEnabled true
             debuggable true
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-
         alpha {
-            multiDexEnabled true
             applicationIdSuffix '.alpha'
             versionNameSuffix '-alpha'
             if(signingConfigs.hasProperty('release')){
@@ -87,9 +84,7 @@ android {
 
             matchingFallbacks = ['release', 'debug']
         }
-
         release {
-            multiDexEnabled true
             debuggable true
             minifyEnabled true
             shrinkResources true
