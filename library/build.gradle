@@ -14,7 +14,6 @@ android {
         versionCode 1
         versionName "1.1.0"
         vectorDrawables.useSupportLibrary = true
-        multiDexEnabled true
 
         consumerProguardFiles 'proguard-rules.pro'
     }
@@ -26,6 +25,12 @@ android {
         dataBinding true
     }
     buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         debug {
             debuggable true
             minifyEnabled true
