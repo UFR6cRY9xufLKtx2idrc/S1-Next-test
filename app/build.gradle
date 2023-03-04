@@ -85,7 +85,6 @@ android {
             matchingFallbacks = ['release', 'debug']
         }
         release {
-            debuggable true
             minifyEnabled true
             shrinkResources true
             zipAlignEnabled true
