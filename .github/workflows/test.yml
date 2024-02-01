@@ -53,7 +53,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: app/build/outputs/apk/release/app-normal-release-unsigned.apk
+          file: app/build/outputs/apk/normal/release/app-normal-release-unsigned.apk
           asset_name: app-normal-release-unsigned-${{ github.run_number }}.apk
           tag: ${{ github.ref }}
           overwrite: true
@@ -62,7 +62,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: app/build/outputs/apk/release/app-play-release-unsigned.apk
+          file: app/build/outputs/apk/play/release/app-play-release-unsigned.apk
           asset_name: app-play-release-unsigned-${{ github.run_number }}.apk
           tag: ${{ github.ref }}
           overwrite: true
