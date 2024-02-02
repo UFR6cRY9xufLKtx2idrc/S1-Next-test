@@ -6,7 +6,6 @@ on:
       - '*'
     tags-ignore:
       - "*"
-  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -30,7 +29,7 @@ jobs:
           check-latest: true
 
       - name: Gradle Build
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v3
         with:
           arguments: assembleRelease
           gradle-home-cache-cleanup: true
