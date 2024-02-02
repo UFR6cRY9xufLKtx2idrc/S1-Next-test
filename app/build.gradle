@@ -157,7 +157,7 @@ dependencies {
     implementation "nz.bradcampbell:paperparcel-api:2.0.8"
     kapt 'nz.bradcampbell:paperparcel-compiler:2.0.8'
 
-    kapt 'com.github.bumptech.glide:compiler:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
 
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'org.greenrobot:greendao:3.3.0'
