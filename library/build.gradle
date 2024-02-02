@@ -77,7 +77,7 @@ dependencies {
     api "androidx.percentlayout:percentlayout:1.0.0"
     api "androidx.legacy:legacy-preference-v14:1.0.0"
     api "androidx.legacy:legacy-support-v4:1.0.0"
-    api "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:2.7.0"
     api 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     api 'androidx.multidex:multidex:2.0.1'
