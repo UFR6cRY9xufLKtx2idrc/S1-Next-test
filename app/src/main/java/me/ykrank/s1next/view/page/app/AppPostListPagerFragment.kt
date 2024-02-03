@@ -287,7 +287,7 @@ class AppPostListPagerFragment : BaseRecyclerViewFragment<AppPostsWrapper>(), On
             if (i >= 10 && i % 2 == 0) {
                 continue
             }
-            val letter = (i + 1 + 30 * (page - 1)).toString()
+            val letter = (i + 1 + 40 * (page - 1)).toString()
             customLetters.add(letter)
             letters.put(letter, i)
         }
