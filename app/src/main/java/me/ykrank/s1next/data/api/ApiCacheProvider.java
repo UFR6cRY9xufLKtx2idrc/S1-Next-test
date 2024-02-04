@@ -27,10 +27,10 @@ public interface ApiCacheProvider {
 
 
     @ProviderKey("posts_wrapper")
-    @LifeCache(duration = 30, timeUnit = TimeUnit.MINUTES)
+    @LifeCache(duration = 40, timeUnit = TimeUnit.MINUTES)
     Single<Reply<String>> getPostsWrapper(Single<String> oWrapper, DynamicKeyGroup page, EvictDynamicKeyGroup evictDynamicKey);
 
     @ProviderKey("posts_wrapper_new")
-    @LifeCache(duration = 30, timeUnit = TimeUnit.MINUTES)
+    @LifeCache(duration = 40, timeUnit = TimeUnit.MINUTES)
     Single<Reply<String>> getPostsWrapperNew(Single<String> oWrapper, DynamicKeyGroup page, EvictDynamicKeyGroup evictDynamicKey);
 }
